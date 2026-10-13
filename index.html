@@ -1,4 +1,34 @@
 <!doctype html>
 <html lang="en">
-  <head> </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>playlistUI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- hidden native audio element -->
+    <audio id="audio-engine" preload="metadata"></audio>
+
+    <div class="playlist-container">
+      <!-- hero/header section -->
+      <header class="playlist-header">
+        <div class="cover-art">
+          <span class="cover-icon">♫</span>
+        </div>
+        <div class="playlist-info">
+          <span class="badge">Library</span>
+          <h1 id="playlist-title">Uploads</h1>
+          <p class="playlist-desc">
+            Select MP3 tracks from your local storage to play in-browser.
+          </p>
+          <div class="meta-info">
+            <span class="creator">User Session</span>
+            <span class="dot">•</span>
+            <span id="track-count-label">0 songs</span>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
 </html>
